@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resume constructor</title>
+</head>
+<body>
+<header class="header">
+    <h1 class="header_title">Resume constructor</h1>
+</header>
+<main class="container">
+    <form id="form-container" method="post">
+        <div class="pictureBox">
+            <div class="upload_btn">
+                <input id="file-input" type="file" name="file">
+                <label class="picture_label" for="file-input"><img src="./img/upload.png" alt=""></label>
+                <label for="file-input">Upload your photo</label>
+            </div>
+            <div class="picture"><img class="preview" src="" alt=""></div>
+        </div>
+        <div class="name inputTextBox">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text">
+        </div>
+        <div class="surname inputTextBox">
+            <label for="surname">Surname</label>
+            <input id="surname" name="surname" type="text">
+        </div>
+        <div class="email inputTextBox">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+        </div>
+        <div class="phone inputTextBox">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="text">
+        </div>
+        <div class="message inputTextBox">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+
+        <button class="onSubmitBtn" type="submit">Submit</button>
+    </form>
+</main>
+<script type="module" src="js/validateName.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
